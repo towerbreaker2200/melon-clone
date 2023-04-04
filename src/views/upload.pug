@@ -1,0 +1,9 @@
+extends base.pug
+
+block content
+  form(method="POST")
+    input(placeholder="Title", required, type="text", name="title")
+    input(placeholder="Artist", required, type="text", name="artist")
+    input(placeholder="Playtime", required, type="text", name="playtime")
+    input(placeholder="Playcount", required, type="text", name="playcount")
+    input(type="submit", value="Upload Song")

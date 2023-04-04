@@ -1,0 +1,70 @@
+#Container{
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+
+#SongListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: gray;
+}
+
+#Title {
+  font-size: 48px;
+  color: black;
+}
+#Songlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 16px;
+}
+
+a{
+  display: block;
+  width: 100%;
+}
+
+#Song {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr 1fr;
+  width: 100%;
+  font-size: 24px;
+}
+
+#SongCoverImg{
+  width: 32px;
+  height: 32px;
+}
+
+#SongPlayerContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: purple;
+}
+
+.playertitle{
+  font-size: 24px;
+  color:white;
+}
+#CoverImg{
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 16px;
+}
+#SongController{
+  display: flex;
+  justify-content: space-between;
+}

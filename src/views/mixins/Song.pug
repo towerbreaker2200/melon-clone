@@ -1,0 +1,8 @@
+mixin Song(track)
+  a(href=`/${track.id}`)
+    li#Song
+      div#SongCoverImg
+        img(src="")
+      p #{track.title || "songtitle"}
+      p #{track.playcount || "playcount"}
+      p #{track.playtime || "playtime"}

@@ -1,6 +1,7 @@
 // Config
 @import "./config/_variables.scss";
 @import "./config/_reset.scss";
+@import "./components/home.scss";
 
 // Components
 
@@ -21,4 +22,19 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: $bg;
   color: white;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 960px;
+  height: 100vh;
+  margin: auto;
+}
+
+footer {
+  position: absolute;
+  bottom:0;
+  left: 0;
 }

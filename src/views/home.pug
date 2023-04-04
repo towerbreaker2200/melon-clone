@@ -1,4 +1,20 @@
 extends base
+include mixins/Song
 
 block content
-    div
+  #Container
+    #SongListContainer 
+      #Title Title
+      ul#Songlist
+        each song in Songs
+          +Song(song)
+        else
+          li nothing found
+    #SongPlayerContainer
+      img(src="")#CoverImg
+      .playertitle #{playingSong.title}
+      #SongController 
+        button#prev prev
+        button#play play
+        button#stop stop
+        button#next next
